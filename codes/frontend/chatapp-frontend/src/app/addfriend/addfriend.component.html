@@ -1,0 +1,26 @@
+
+<div class="screen">
+  <app-header></app-header>
+
+<div class=" container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col">
+            <form [formGroup]="inviteform"  style="width: 50%;">
+              <h4 style="text-align: center;color: #1161ee;font-family: 'Righteous', cursive;">ADD FRIEND</h4> <br>
+
+                <div class="mb-3">
+                  <label style="color: white;" for="text" class="form-label">User Name</label>
+                  <input type="text" class="form-control" formControlName="name" >
+                </div>
+                <div class="mb-3">
+                  <label style="color: white;" for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" formControlName="email">
+                </div>
+                
+                <button type="submit" class="btn btn-primary" (click)="invite()" >ADD</button>
+              </form>
+        </div>
+
+    </div>
+</div>

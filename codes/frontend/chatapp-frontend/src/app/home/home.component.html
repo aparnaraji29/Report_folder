@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="conatiner"   style="margin-bottom: 50px; " >  
+    <div class="row"  style="margin-left: 100px;">
+        <div class="col-lg-6 col-md-5 col-sm-12 mt-5">
+            <div>
+               <h2  style="color:  rgba(252, 77, 193); font-family: 'Libre Baskerville', serif;">Welcome to Chat app</h2>
+                <h5  style="color:  rgba(252, 77, 193); font-family: 'Borel', cursive;" >A Real Time Chat Application</h5>
+                <img src="../../assets/home.webp" alt="">
+                <br>
+                <div class="button-container">
+                   <button id="b1"  type="button" class="btn btn-primary"  (click)="SignupForm()">SignUp</button>
+                   <button  id="b2"  type="button" class="btn btn-primary"(click)="LoginForm()" >LogIn</button>
+               </div>            
+           </div>
+           </div> 
+           <div class="col-lg-6 col-md-7 col-sm-12">
+
+            <ng-container *ngIf="showLoginForm && !showSignupForm">
+              <br>  <app-login></app-login>
+              </ng-container>
+              <ng-container *ngIf="showSignupForm">
+               <br> <app-signup></app-signup>
+              </ng-container>
+        </div>
+    </div>
+</div>

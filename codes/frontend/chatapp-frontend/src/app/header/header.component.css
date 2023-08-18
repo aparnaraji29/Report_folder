@@ -1,0 +1,11 @@
+nav{
+    /* background-color:rgba(252, 77, 193) ; */
+    background-image: linear-gradient(to right, rgba(252, 77, 193), rgba(17, 97, 238, 1));
+
+    /* background-color: rgb(42, 137, 154) ; */
+
+}
+#logo{
+    padding: 0 ;
+    margin: 0 ;
+}
